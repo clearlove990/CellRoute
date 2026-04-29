@@ -1,0 +1,17 @@
+name: cellroute-sample-aware
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - statsmodels
+  - h5py
+  - pytorch
+  - pip:
+      - -e .

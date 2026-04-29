@@ -1,0 +1,10 @@
+test_name,status,observed,expected,details
+clean_win_case,pass,clean_win,clean_win,One target improves and no protected or target metric regresses.
+near_clean_case,pass,near_clean,near_clean,Protected loss stays inside tolerance and one target clears the gain threshold.
+mixed_tradeoff_case,pass,mixed_tradeoff,mixed_tradeoff,A target win paired with a protected loss must be labelled mixed tradeoff.
+dominated_case,pass,dominated,dominated,No wins plus at least one loss should be dominated.
+frontier_membership,pass,"A,B,C","A,B,C",Three mutually non-dominated points should remain on the frontier.
+dominance_depth,pass,"{'C': 0, 'A': 0, 'B': 0, 'D': 1, 'E': 2}","{'A': 0, 'B': 0, 'C': 0, 'D': 1, 'E': 2}",Dominance depth should peel frontier layers in order.
+alpha_grid,pass,"[0.0, 0.25, 0.5, 0.75, 1.0]","[0.0, 0.25, 0.5, 0.75, 1.0]",The alpha grid helper should emit a stable rounded sweep.
+replacement_simulation_rows,pass,3,3,Budget simulation should emit one row per requested budget.
+replacement_frontier_budgets,pass,"25,50","25,50",Replacement frontier should keep the two non-dominated budget points.

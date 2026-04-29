@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cellroute-sample-aware"
+version = "0.1.0"
+description = "Sample-aware evaluation framework for differential spatial motif analysis with LOSO alignment, sample-level testing, and simulation calibration."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy",
+  "scipy",
+  "pandas",
+  "scikit-learn",
+  "matplotlib",
+  "seaborn",
+  "statsmodels",
+  "h5py",
+  "torch",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["spatial_context*"]

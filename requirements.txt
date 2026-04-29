@@ -1,0 +1,9 @@
+numpy
+scipy
+pandas
+scikit-learn
+matplotlib
+seaborn
+statsmodels
+h5py
+torch

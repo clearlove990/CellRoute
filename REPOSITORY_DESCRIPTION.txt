@@ -1,0 +1,1 @@
+Sample-aware evaluation framework for differential spatial motif analysis / LOSO / sample-level testing / simulation calibration
